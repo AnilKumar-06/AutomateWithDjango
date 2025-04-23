@@ -31,7 +31,7 @@ class Command(BaseCommand):
         
         #define the csv
         timestamp = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
-        file_path = f"exported_{model_name}_data_{timestamp}.csv"
+        file_path = f"data/exported_{model_name}_data_{timestamp}.csv"
         
         with open(file_path, 'w', newline='') as file:
             writer = csv.writer(file)
